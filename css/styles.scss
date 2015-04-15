@@ -1,7 +1,5 @@
 $font-stack: Roboto Slab;
 $height: 65%;
-$main-background: #867e80;
-$fore-background: #f6f1ef;
 
 html, body {
   font-family: $font-stack;
@@ -11,9 +9,7 @@ html, body {
   display: compact;
 }
 
-body {
-  overflow-y:hidden;
-}
+
 .highlight {
   color: white;
 }

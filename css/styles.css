@@ -5,9 +5,6 @@ html, body {
   background-repeat: no-repeat;
   display: compact; }
 
-body {
-  overflow-y: hidden; }
-
 .highlight {
   color: white; }
 
