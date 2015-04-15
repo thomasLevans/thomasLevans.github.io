@@ -1,0 +1,30 @@
+html, body {
+  font-family: Roboto Slab;
+  background: url("../img/Frost_patterns_2.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: compact; }
+
+body {
+  overflow-y: hidden; }
+
+.highlight {
+  color: white; }
+
+.tapestry {
+  height: 65%;
+  font-family: Roboto Slab; }
+
+.trans {
+  background-color: rgba(0, 0, 0, 0.5); }
+
+.img-lbl {
+  color: black; }
+
+.bio {
+  font-size: 17px; }
+
+.showcase {
+  padding-top: 7%; }
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,39 @@
+$font-stack: Roboto Slab;
+$height: 65%;
+$main-background: #867e80;
+$fore-background: #f6f1ef;
+
+html, body {
+  font-family: $font-stack;
+  background: url('../img/Frost_patterns_2.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: compact;
+}
+
+body {
+  overflow-y:hidden;
+}
+.highlight {
+  color: white;
+}
+
+.tapestry {
+  height: $height;
+  font-family: $font-stack;
+}
+
+.trans {
+  background-color: rgba(0,0,0,0.5);
+}
+
+.img-lbl {
+  color: black;
+}
+
+.bio {
+  font-size: 17px;
+}
+.showcase {
+  padding-top: 7%;
+}
