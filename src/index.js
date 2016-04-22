@@ -3,6 +3,11 @@ const height = 500;
 const radius = 250;
 const color = d3.scale.category20();
 
+const tooltip = d3.select('body')
+  .append('div')
+  .attr('class', 'tooltip')
+  .style('opacity', 0);
+
 const svg = d3.select('#vis')
   .append('svg')
     .attr('width', width)
@@ -32,6 +37,21 @@ d3.json('../res/skills.json', (err, root) => {
     .append('path')
     .attr('display', (d) => { return d.depth ? null : 'none'; })
     .attr('d', arc)
+    .on('mouseover', (d) => {
+      tooltip.transition()
+        .duration(200)
+        .style('opacity', 0.8);
+
+      tooltip.html(`<h3>${d.name}</h3>`)
+        .attr('width', (d.name.length + 20)+'px')
+        .style('left', d3.event.pageX + 'px')
+        .style('top', (d3.event.pageY - 28) + 'px');
+    })
+    .on('mouseout', (d) => {
+      tooltip.transition()
+        .duration(200)
+        .style('opacity', 0);
+    })
     .style('stroke', '#fff')
     .style('fill', (d) => { return color((d.children ? d : d.parent).name); })
     .style('fill-rule', 'evenodd')

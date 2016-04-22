@@ -1,0 +1,10 @@
+div.tooltip {
+  position: absolute;
+  text-align: center;
+  padding: 0px;
+  font-size: 12px;
+  font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+  background: lightgray;
+  border: 0px;
+  border-radius: 0px;
+  pointer-events: none; }

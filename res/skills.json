@@ -2,49 +2,6 @@
   "name": "My Knowledge Nexus",
   "children": [
     {
-      "name": "VisualTree",
-      "children": [
-        {
-          "name": "Learning Experiment",
-          "children": [
-            {
-              "name": "Algorithm Design",
-              "children": []
-            }
-          ]
-        },
-        {
-          "name": "Javascript",
-          "children": [
-            {
-              "name": "D3",
-              "children": []
-            },
-            {
-              "name": "Mocha",
-              "children": []
-            },
-            {
-              "name": "Chai",
-              "children": []
-            },
-            {
-              "name": "ES6",
-              "children": []
-            },
-            {
-              "name": "Webpack",
-              "children": []
-            },
-            {
-              "name": "Node",
-              "children": []
-            }
-          ]
-        }
-      ]
-    },
-    {
       "name": "MUSC-BMIC",
       "children": [
         {
@@ -87,7 +44,12 @@
                 {
                   "name": "RDF/XML",
                   "children": []
-                },
+                }
+              ]
+            },
+            {
+              "name": "Data Science",
+              "children": [
                 {
                   "name": "Graph Theory",
                   "children": [
@@ -96,29 +58,25 @@
                       "children": []
                     }
                   ]
-                }
-              ]
-            },
-            {
-              "name": "Bioinformatics",
-              "children": [
+                },
                 {
                   "name": "Translational Science Research",
                   "children": []
                 },
                 {
-                  "name": "Data Science",
+                  "name": "Bioinformatics",
                   "children": []
                 }
               ]
             },
             {
               "name": "Agile",
-              "children": []
-            },
-            {
-              "name": "TDD",
-              "children": []
+              "children": [
+                {
+                  "name": "TDD",
+                  "children": []
+                }
+              ]
             },
             {
               "name": "Javascript",
@@ -207,28 +165,214 @@
       ]
     },
     {
-      "name": "TeaMate",
-      "children": []
+      "name": "School Projects",
+      "children": [
+        {
+          "name": "TeaMate",
+          "children": [
+            {
+              "name": "H/FOSS",
+              "children": []
+            },
+            {
+              "name": "Unit Testing",
+              "children": []
+            },
+            {
+              "name": "Test Suite Design",
+              "children": []
+            },
+            {
+              "name": "Group Collaboration",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Wally's Wacky Wand Shoppe",
+          "children": [
+            {
+              "name": "Full Stack Development",
+              "children": []
+            },
+            {
+              "name": "PHP",
+              "children": []
+            },
+            {
+              "name": "MySQL",
+              "children": []
+            },
+            {
+              "name": "Javascript",
+              "children": [
+                {
+                  "name": "Angular",
+                  "children": []
+                },
+                {
+                  "name": "D3",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
-      "name": "VotingExample",
-      "children": []
-    },
-    {
-      "name": "Whiteboard",
-      "children": []
-    },
-    {
-      "name": "Wally's Wacky Wand Shoppe",
-      "children": []
-    },
-    {
-      "name": "RustForge",
-      "children": []
-    },
-    {
-      "name": "ConnectFour",
-      "children": []
+      "name": "Personal Projects",
+      "children": [
+        {
+          "name": "VisualTree",
+          "children": [
+            {
+              "name": "Learning Experiment",
+              "children": [
+                {
+                  "name": "Algorithm Design",
+                  "children": []
+                },
+                {
+                  "name": "Graph Theory",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Javascript",
+              "children": [
+                {
+                  "name": "D3",
+                  "children": []
+                },
+                {
+                  "name": "Mocha",
+                  "children": []
+                },
+                {
+                  "name": "Chai",
+                  "children": []
+                },
+                {
+                  "name": "ES6",
+                  "children": []
+                },
+                {
+                  "name": "Webpack",
+                  "children": []
+                },
+                {
+                  "name": "Node",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "VotingExample",
+          "children": [
+            {
+              "name": "Functional Programming",
+              "children": []
+            },
+            {
+              "name": "Javascript",
+              "children": [
+                {
+                  "name": "React",
+                  "children": []
+                },
+                {
+                  "name": "Redux",
+                  "children": []
+                },
+                {
+                  "name": "Mocha",
+                  "children": []
+                },
+                {
+                  "name": "Chai",
+                  "children": []
+                },
+                {
+                  "name": "Immutable",
+                  "children": []
+                },
+                {
+                  "name": "ES6",
+                  "children": []
+                },
+                {
+                  "name": "Webpack",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Whiteboard",
+          "children": [
+            {
+              "name": "NPM component",
+              "children": []
+            },
+            {
+              "name": "Javascript",
+              "children": [
+                {
+                  "name": "D3",
+                  "children": []
+                },
+                {
+                  "name": "socket.io",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "RustForge",
+          "children": [
+            {
+              "name": "Funcitonal Programming",
+              "children": []
+            },
+            {
+              "name": "RESTful API",
+              "children": []
+            },
+            {
+              "name": "MongoDB",
+              "children": []
+            },
+            {
+              "name": "Open Data",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "ConnectFour",
+          "children": [
+            {
+              "name": "Bootstrap",
+              "children": []
+            },
+            {
+              "name": "D3",
+              "children": []
+            },
+            {
+              "name": "Game Logic",
+              "children": []
+            }
+          ]
+        }
+      ]
     }
   ]
 }
