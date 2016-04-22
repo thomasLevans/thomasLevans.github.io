@@ -7,4 +7,15 @@ div.tooltip {
   background: lightgray;
   border: 0px;
   border-radius: 0px;
-  pointer-events: none; }
+  pointer-events: none;
+}
+
+div.legend {
+  text-align: center;
+  padding: 0px;
+  font-size: 8px;
+  font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+  background: lightgray;
+  border: 0px;
+  border-radius: 0px;
+}

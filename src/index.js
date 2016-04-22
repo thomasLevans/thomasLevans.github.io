@@ -1,7 +1,11 @@
 const width = 500;
 const height = 500;
+const legendSize = 10;
 const radius = 250;
-const color = d3.scale.category20();
+const color = d3.scale.category10();
+const heat = d3.scale.linear()
+  .domain([5,10])
+  .range(['lightgray','red']);
 
 const tooltip = d3.select('body')
   .append('div')
@@ -14,6 +18,25 @@ const svg = d3.select('#vis')
     .attr('height', height)
   .append('g')
     .attr('transform', `translate(${width/2},${height/2})`);
+
+const legend = d3.select('svg')
+  .selectAll('g')
+  .data(['project','group','library','methodology','database','language'])
+  .enter()
+  .append('g')
+    .attr('class', 'legend')
+    .attr('transform', (d, i) => { return `translate(0,${10+i*legendSize})`; });
+
+legend.append('rect')
+  .attr('width', legendSize)
+  .attr('height', legendSize)
+  .style('fill', color)
+  .style('stroke', color);
+
+legend.append('text')
+  .attr('x', legendSize+4)
+  .attr('y', legendSize-1)
+  .text((d) => { return d; });
 
 const partition = d3.layout.partition()
   .sort(null)
@@ -37,6 +60,7 @@ d3.json('../res/skills.json', (err, root) => {
     .append('path')
     .attr('display', (d) => { return d.depth ? null : 'none'; })
     .attr('d', arc)
+    .attr("data-legend",function(d) { return d.name})
     .on('mouseover', (d) => {
       tooltip.transition()
         .duration(200)
@@ -52,8 +76,11 @@ d3.json('../res/skills.json', (err, root) => {
         .duration(200)
         .style('opacity', 0);
     })
-    .style('stroke', '#fff')
-    .style('fill', (d) => { return color((d.children ? d : d.parent).name); })
+    .style('stroke', 'lightgray')
+    // .style('opacity', 0.8)
+    .style('fill', (d) => {
+      return color(d.type);
+    })
     .style('fill-rule', 'evenodd')
     .each((d) => {
       d.x0 = d.x;
