@@ -181,7 +181,7 @@
             },
             {
               "name": "Javascript",
-              "type": "library",
+              "type": "language",
               "proficiency": 9,
               "children": [
                 {
@@ -333,21 +333,16 @@
           "type": "project",
           "children": [
             {
-              "name": "Learning Experiment",
-              "children": [
-                {
-                  "name": "Algorithm Design",
-                  "type": "methodology",
-                  "proficiency": 8,
-                  "children": []
-                },
-                {
-                  "name": "Graph Theory",
-                  "type": "methodology",
-                  "proficiency": 7,
-                  "children": []
-                }
-              ]
+              "name": "Algorithm Design",
+              "type": "methodology",
+              "proficiency": 8,
+              "children": []
+            },
+            {
+              "name": "Graph Theory",
+              "type": "methodology",
+              "proficiency": 7,
+              "children": []
             },
             {
               "name": "Javascript",

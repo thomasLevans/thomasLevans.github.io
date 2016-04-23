@@ -1,11 +1,17 @@
 const width = 500;
 const height = 500;
 const legendSize = 10;
-const radius = 250;
-const color = d3.scale.category10();
+const radius = 225;
+const legendLabels = {
+  type: ['','project','group','library','methodology','database','language'],
+  proficiency: ['0','3','6','9','12']
+};
+const color = d3.scale.category20();
 const heat = d3.scale.linear()
-  .domain([5,10])
-  .range(['lightgray','red']);
+  .domain([1,12])
+  .range(['rgb(255, 255, 255)','rgb(255, 0, 0)']);
+
+let data = undefined;
 
 const tooltip = d3.select('body')
   .append('div')
@@ -21,7 +27,7 @@ const svg = d3.select('#vis')
 
 const legend = d3.select('svg')
   .selectAll('g')
-  .data(['project','group','library','methodology','database','language'])
+  .data(legendLabels.type)
   .enter()
   .append('g')
     .attr('class', 'legend')
@@ -52,15 +58,20 @@ const arc = d3.svg.arc()
 d3.json('../res/skills.json', (err, root) => {
   if (err) {
     console.error(`Error loading data: ${err.message}`);
+  } else {
+    data = root;
+    update();
   }
+});
 
-  const path = svg.datum(root).selectAll('path')
+function update() {
+
+  const path = svg.datum(data).selectAll('path')
     .data(partition.nodes)
     .enter()
     .append('path')
     .attr('display', (d) => { return d.depth ? null : 'none'; })
     .attr('d', arc)
-    .attr("data-legend",function(d) { return d.name})
     .on('mouseover', (d) => {
       tooltip.transition()
         .duration(200)
@@ -76,8 +87,7 @@ d3.json('../res/skills.json', (err, root) => {
         .duration(200)
         .style('opacity', 0);
     })
-    .style('stroke', 'lightgray')
-    // .style('opacity', 0.8)
+    .style('stroke', 'white')
     .style('fill', (d) => {
       return color(d.type);
     })
@@ -87,4 +97,19 @@ d3.json('../res/skills.json', (err, root) => {
       d.dx0 = d.dx;
     });
 
-});
+  d3.selectAll('input')
+    .on('change', function() {
+      const val = this.value;
+
+      path.transition()
+        .duration(400)
+        .style('opacity', (d) => {
+          return (val==='proficiency'&&(d.type==='group'||d.type==='project')) ? 0.4 : 1;
+        })
+        .style('fill', (d) => {
+          return (val==='proficiency'&&d.type!=='project'&&d.type!=='group') ? heat(d.proficiency) : color(d.type);
+        });
+
+
+    });
+}
