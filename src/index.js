@@ -3,8 +3,14 @@ const height = 500;
 const legendSize = 10;
 const radius = 225;
 const legendLabels = {
-  type: ['','project','group','library','methodology','database','language'],
-  proficiency: ['0','3','6','9','12']
+  type: ['project','group','library','methodology','database','language'],
+  proficiency: [
+    { label: 'It\'s a Thing', value: 0},
+    { label: 'Reasonably', value : 3},
+    { label: 'I Got This', value: 6},
+    { label: 'Ninja', value: 9},
+    { label: 'Jedi', value: 12}
+  ]
 };
 const color = d3.scale.category20();
 const heat = d3.scale.linear()
@@ -25,24 +31,42 @@ const svg = d3.select('#vis')
   .append('g')
     .attr('transform', `translate(${width/2},${height/2})`);
 
-const legend = d3.select('svg')
-  .selectAll('g')
+const typeLegend = svg.selectAll('g.legend.type')
   .data(legendLabels.type)
   .enter()
   .append('g')
-    .attr('class', 'legend')
-    .attr('transform', (d, i) => { return `translate(0,${10+i*legendSize})`; });
+    .attr('class', 'legend.type')
+    .attr('transform', (d, i) => { return `translate(-30,${-35+(i*1.5)*legendSize})`; });
 
-legend.append('rect')
+typeLegend.append('rect')
   .attr('width', legendSize)
   .attr('height', legendSize)
   .style('fill', color)
   .style('stroke', color);
 
-legend.append('text')
+typeLegend.append('text')
   .attr('x', legendSize+4)
   .attr('y', legendSize-1)
   .text((d) => { return d; });
+
+const heatLegend = svg.selectAll('g.legend.proficiency')
+  .data(legendLabels.proficiency)
+  .enter()
+  .append('g')
+    .attr('class', 'legend.proficiency')
+    .attr('transform', (d, i) => { return `translate(-20,${-30+(i*1.5)*legendSize})`; })
+    .style('opacity', 0);
+
+heatLegend.append('rect')
+  .attr('width', legendSize)
+  .attr('height', legendSize)
+  .style('fill', (d) => { return heat(d.value); })
+  .style('stroke', 'rgb(153, 149, 149)');
+
+heatLegend.append('text')
+  .attr('x', legendSize+4)
+  .attr('y', legendSize-1)
+  .text((d) => { return d.label; });
 
 const partition = d3.layout.partition()
   .sort(null)
@@ -110,6 +134,13 @@ function update() {
           return (val==='proficiency'&&d.type!=='project'&&d.type!=='group') ? heat(d.proficiency) : color(d.type);
         });
 
+      heatLegend.transition()
+        .duration(400)
+        .style('opacity', (d) => { return val!=='type' ? 1 : 0; });
+
+      typeLegend.transition()
+        .duration(400)
+        .style('opacity', (d) => { return val==='type' ? 1 : 0; });
 
     });
 }
