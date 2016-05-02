@@ -12,12 +12,12 @@
             {
               "name": "Javascript",
               "type": "language",
-              "proficiency": 9,
+              "proficiency": 90,
               "children": [
                 {
                   "name": "D3",
                   "type": "library",
-                  "proficiency": 7,
+                  "proficiency": 70,
                   "children": []
                 }
               ]
@@ -25,24 +25,24 @@
             {
               "name": "Open Linked Data",
               "type": "methodology",
-              "proficiency": 6,
+              "proficiency": 80,
               "children": [
                 {
                   "name": "SPARQL",
                   "type": "language",
-                  "proficiency": 5,
+                  "proficiency": 60,
                   "children": []
                 },
                 {
                   "name": "RDF/XML",
                   "type": "language",
-                  "proficiency": 8,
+                  "proficiency": 70,
                   "children": []
                 },
                 {
                   "name": "Ontologies",
                   "type": "language",
-                  "proficiency": 5,
+                  "proficiency": 50,
                   "children": []
                 }
               ]
@@ -56,18 +56,18 @@
             {
               "name": "Open Linked Data",
               "type": "methodology",
-              "proficiency": 8,
+              "proficiency": 80,
               "children": [
                 {
                   "name": "SPARQL",
                   "type": "language",
-                  "proficiency": 5,
+                  "proficiency": 60,
                   "children": []
                 },
                 {
                   "name": "RDF/XML",
                   "type": "language",
-                  "proficiency": 8,
+                  "proficiency": 70,
                   "children": []
                 }
               ]
@@ -75,17 +75,17 @@
             {
               "name": "Data Science",
               "type": "methodology",
-              "proficiency": 5,
+              "proficiency": 50,
               "children": [
                 {
                   "name": "Graph Theory",
                   "type": "methodology",
-                  "proficiency": 7,
+                  "proficiency": 80,
                   "children": [
                     {
                       "name": "Graph Database",
                       "type": "database",
-                      "proficiency": 7,
+                      "proficiency": 80,
                       "children": []
                     }
                   ]
@@ -93,13 +93,13 @@
                 {
                   "name": "Translational Science Research",
                   "type": "methodology",
-                  "proficiency": 6,
+                  "proficiency": 80,
                   "children": []
                 },
                 {
                   "name": "Bioinformatics",
                   "type": "methodology",
-                  "proficiency": 6,
+                  "proficiency": 70,
                   "children": []
                 }
               ]
@@ -107,12 +107,12 @@
             {
               "name": "Agile",
               "type": "methodology",
-              "proficiency": 9,
+              "proficiency": 90,
               "children": [
                 {
                   "name": "TDD",
                   "type": "methodology",
-                  "proficiency": 9,
+                  "proficiency": 90,
                   "children": []
                 }
               ]
@@ -120,36 +120,36 @@
             {
               "name": "Javascript",
               "type": "language",
-              "proficiency": 9,
+              "proficiency": 90,
               "children": [
                 {
                   "name": "D3",
                   "type": "library",
-                  "proficiency": 7,
+                  "proficiency": 80,
                   "children": []
                 },
                 {
                   "name": "Karma",
                   "type": "library",
-                  "proficiency": 5,
+                  "proficiency": 60,
                   "children": []
                 },
                 {
                   "name": "Jasmine",
                   "type": "library",
-                  "proficiency": 5,
+                  "proficiency": 70,
                   "children": []
                 },
                 {
                   "name": "RequireJS",
                   "type": "library",
-                  "proficiency": 5,
+                  "proficiency": 70,
                   "children": []
                 },
                 {
                   "name": "PhantomJS",
                   "type": "library",
-                  "proficiency": 3,
+                  "proficiency": 60,
                   "children": []
                 }
               ]
@@ -169,12 +169,12 @@
             {
               "name": "Java 8",
               "type": "language",
-              "proficiency": 7,
+              "proficiency": 80,
               "children": [
                 {
                   "name": "Webkit",
                   "type": "library",
-                  "proficiency": 3,
+                  "proficiency": 50,
                   "children": []
                 }
               ]
@@ -182,36 +182,36 @@
             {
               "name": "Javascript",
               "type": "language",
-              "proficiency": 9,
+              "proficiency": 90,
               "children": [
                 {
                   "name": "D3",
                   "type": "library",
-                  "proficiency": 7,
+                  "proficiency": 80,
                   "children": []
                 },
                 {
                   "name": "Karma",
                   "type": "library",
-                  "proficiency": 5,
+                  "proficiency": 60,
                   "children": []
                 },
                 {
                   "name": "Jasmine",
                   "type": "library",
-                  "proficiency": 5,
+                  "proficiency": 70,
                   "children": []
                 },
                 {
                   "name": "BusterJS",
                   "type": "library",
-                  "proficiency": 2,
+                  "proficiency": 50,
                   "children": []
                 },
                 {
                   "name": "PhantomJS",
                   "type": "library",
-                  "proficiency": 3,
+                  "proficiency": 60,
                   "children": []
                 }
               ]
@@ -219,18 +219,18 @@
             {
               "name": "Geology",
               "type": "methodology",
-              "proficiency": 7,
+              "proficiency": 70,
               "children": []
             },
             {
               "name": "DevOps",
               "type": "methodology",
-              "proficiency": 6,
+              "proficiency": 80,
               "children": [
                 {
                   "name": "QA",
                   "type": "methodology",
-                  "proficiency": 8,
+                  "proficiency": 80,
                   "children": []
                 }
               ]
@@ -250,25 +250,25 @@
             {
               "name": "H/FOSS",
               "type": "methodology",
-              "proficiency": 7,
+              "proficiency": 70,
               "children": []
             },
             {
               "name": "Unit Testing",
               "type": "methodology",
-              "proficiency": 9,
+              "proficiency": 90,
               "children": []
             },
             {
               "name": "Test Suite Design",
               "type": "methodology",
-              "proficiency": 7,
+              "proficiency": 80,
               "children": []
             },
             {
               "name": "Group Collaboration",
               "type": "methodology",
-              "proficiency": 10,
+              "proficiency": 100,
               "children": []
             }
           ]
@@ -280,42 +280,42 @@
             {
               "name": "Full Stack Development",
               "type": "methodology",
-              "proficiency": 8,
+              "proficiency": 80,
               "children": []
             },
             {
               "name": "PHP",
               "type": "language",
-              "proficiency": 5,
+              "proficiency": 60,
               "children": []
             },
             {
               "name": "Database Design",
               "type": "methodology",
-              "proficiency": 8,
+              "proficiency": 80,
               "children": []
             },
             {
               "name": "MySQL",
               "type": "language",
-              "proficiency": 9,
+              "proficiency": 90,
               "children": []
             },
             {
               "name": "Javascript",
               "type": "language",
-              "proficiency": 9,
+              "proficiency": 90,
               "children": [
                 {
                   "name": "Angular",
                   "type": "library",
-                  "proficiency": 6,
+                  "proficiency": 60,
                   "children": []
                 },
                 {
                   "name": "D3",
                   "type": "library",
-                  "proficiency": 7,
+                  "proficiency": 80,
                   "children": []
                 }
               ]
@@ -335,54 +335,54 @@
             {
               "name": "Algorithm Design",
               "type": "methodology",
-              "proficiency": 8,
+              "proficiency": 80,
               "children": []
             },
             {
               "name": "Graph Theory",
               "type": "methodology",
-              "proficiency": 7,
+              "proficiency": 80,
               "children": []
             },
             {
               "name": "Javascript",
               "type": "language",
-              "proficiency": 9,
+              "proficiency": 90,
               "children": [
                 {
                   "name": "D3",
                   "type": "library",
-                  "proficiency": 7,
+                  "proficiency": 80,
                   "children": []
                 },
                 {
                   "name": "Mocha",
                   "type": "library",
-                  "proficiency": 10,
+                  "proficiency": 90,
                   "children": []
                 },
                 {
                   "name": "Chai",
                   "type": "library",
-                  "proficiency": 9,
+                  "proficiency": 90,
                   "children": []
                 },
                 {
                   "name": "ES6",
                   "type": "library",
-                  "proficiency": 8,
+                  "proficiency": 90,
                   "children": []
                 },
                 {
                   "name": "Webpack",
                   "type": "library",
-                  "proficiency": 7,
+                  "proficiency": 80,
                   "children": []
                 },
                 {
                   "name": "Node",
                   "type": "library",
-                  "proficiency": 8,
+                  "proficiency": 80,
                   "children": []
                 }
               ]
@@ -396,54 +396,54 @@
             {
               "name": "Functional Programming",
               "type": "methodology",
-              "proficiency": 8,
+              "proficiency": 80,
               "children": []
             },
             {
               "name": "Javascript",
               "type": "language",
-              "proficiency": 9,
+              "proficiency": 90,
               "children": [
                 {
                   "name": "React",
                   "type": "library",
-                  "proficiency": 6,
+                  "proficiency": 70,
                   "children": []
                 },
                 {
                   "name": "Redux",
                   "type": "library",
-                  "proficiency": 7,
+                  "proficiency": 70,
                   "children": []
                 },
                 {
                   "name": "Mocha",
                   "type": "library",
-                  "proficiency": 10,
+                  "proficiency": 90,
                   "children": []
                 },
                 {
                   "name": "Chai",
                   "type": "library",
-                  "proficiency": 9,
+                  "proficiency": 90,
                   "children": []
                 },
                 {
                   "name": "Immutable",
                   "type": "library",
-                  "proficiency": 8,
+                  "proficiency": 70,
                   "children": []
                 },
                 {
                   "name": "ES6",
                   "type": "library",
-                  "proficiency": 8,
+                  "proficiency": 90,
                   "children": []
                 },
                 {
                   "name": "Webpack",
                   "type": "library",
-                  "proficiency": 7,
+                  "proficiency": 80,
                   "children": []
                 }
               ]
@@ -455,56 +455,50 @@
           "type": "project",
           "children": [
             {
-              "name": "NPM Package",
-              "type": "library",
-              "proficiency": 9,
-              "children": []
-            },
-            {
               "name": "Javascript",
               "type": "language",
-              "proficiency": 9,
+              "proficiency": 90,
               "children": [
                 {
                   "name": "Mocha",
                   "type": "library",
-                  "proficiency": 10,
+                  "proficiency": 90,
                   "children": []
                 },
                 {
                   "name": "Chai",
                   "type": "library",
-                  "proficiency": 9,
+                  "proficiency": 90,
                   "children": []
                 },
                 {
                   "name": "Immutable",
                   "type": "library",
-                  "proficiency": 8,
+                  "proficiency": 70,
                   "children": []
                 },
                 {
                   "name": "ES6",
                   "type": "library",
-                  "proficiency": 8,
+                  "proficiency": 90,
                   "children": []
                 },
                 {
                   "name": "Webpack",
                   "type": "library",
-                  "proficiency": 7,
+                  "proficiency": 80,
                   "children": []
                 },
                 {
                   "name": "D3",
                   "type": "library",
-                  "proficiency": 7,
+                  "proficiency": 80,
                   "children": []
                 },
                 {
                   "name": "socket.io",
                   "type": "library",
-                  "proficiency": 6,
+                  "proficiency": 70,
                   "children": []
                 }
               ]
@@ -518,25 +512,25 @@
             {
               "name": "Funcitonal Programming",
               "type": "methodology",
-              "proficiency": 8,
+              "proficiency": 80,
               "children": []
             },
             {
               "name": "RESTful API",
               "type": "methodology",
-              "proficiency": 8,
+              "proficiency": 90,
               "children": []
             },
             {
               "name": "MongoDB",
               "type": "database",
-              "proficiency": 8,
+              "proficiency": 90,
               "children": []
             },
             {
               "name": "Open Data",
               "type": "methodology",
-              "proficiency": 8,
+              "proficiency": 80,
               "children": []
             }
           ]
@@ -548,19 +542,19 @@
             {
               "name": "Bootstrap",
               "type": "library",
-              "proficiency": 8,
+              "proficiency": 80,
               "children": []
             },
             {
               "name": "D3",
               "type": "library",
-              "proficiency": 7,
+              "proficiency": 80,
               "children": []
             },
             {
               "name": "Game Logic",
               "type": "methodology",
-              "proficiency": 7,
+              "proficiency": 70,
               "children": []
             }
           ]

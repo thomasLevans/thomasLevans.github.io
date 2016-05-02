@@ -5,16 +5,17 @@ const radius = 225;
 const legendLabels = {
   type: ['project','group','library','methodology','database','language'],
   proficiency: [
-    { label: 'It\'s a Thing', value: 0},
-    { label: 'Reasonably', value : 3},
-    { label: 'I Got This', value: 6},
-    { label: 'Ninja', value: 9},
-    { label: 'Jedi', value: 12}
+    { label: 'It\'s a Thing', value: 30},
+    { label: 'Hello Ref Docs', value: 50},
+    { label: 'Reasonably', value: 70},
+    { label: 'I Got This', value: 80},
+    { label: 'Ninja', value: 90},
+    { label: 'Jedi', value: 110}
   ]
 };
 const color = d3.scale.category20();
 const heat = d3.scale.linear()
-  .domain([1,12])
+  .domain([30,110])
   .range(['rgb(255, 255, 255)','rgb(255, 0, 0)']);
 
 let data = undefined;
@@ -54,7 +55,7 @@ const heatLegend = svg.selectAll('g.legend.proficiency')
   .enter()
   .append('g')
     .attr('class', 'legend.proficiency')
-    .attr('transform', (d, i) => { return `translate(-20,${-30+(i*1.5)*legendSize})`; })
+    .attr('transform', (d, i) => { return `translate(-30,${-35+(i*1.5)*legendSize})`; })
     .style('opacity', 0);
 
 heatLegend.append('rect')
