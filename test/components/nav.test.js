@@ -3,7 +3,7 @@ import { expect } from 'chai';
 import createComponent from '../helpers/shallowRenderHelper';
 import NavComponent from '../../src/components/nav/';
 
-describe('Nav Component', () => {
+describe('NavComponent', () => {
   let component;
 
   beforeEach(() => {

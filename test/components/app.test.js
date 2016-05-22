@@ -3,7 +3,7 @@ import { expect } from 'chai';
 import createComponent from '../helpers/shallowRenderHelper';
 import AppComponent from '../../src/components/app';
 
-describe('App Component', () => {
+describe('AppComponent', () => {
   let component;
 
   beforeEach(() => {
