@@ -10,6 +10,7 @@ import Skills from './components/skills';
 import Experience from './components/experience';
 import Education from './components/education';
 import Contributions from './components/contributions';
+import Contact from './components/contact';
 
 const store = configureStore();
 
@@ -22,6 +23,7 @@ render(
         <Route path='/experience' component={ Experience } />
         <Route path='/education' component={ Education } />
         <Route path='/contributions' component={ Contributions } />
+        <Route path='/contact' component={ Contact } />
       </Route>
     </Router>
   </Provider>,
