@@ -1,0 +1,1 @@
+export const SET_PARTITION = 'SET_PARTITION';

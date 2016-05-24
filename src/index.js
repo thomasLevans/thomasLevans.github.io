@@ -6,20 +6,22 @@ import { Router, Route, hashHistory } from 'react-router';
 import configureStore from './store';
 import App from './components/app';
 import Who from './components/who';
-import Skills from './components/skills';
+import { SkillsContainer } from './components/skills';
 import Experience from './components/experience';
 import Education from './components/education';
 import Contributions from './components/contributions';
 import Contact from './components/contact';
 
-const store = configureStore();
+import skills from '../dist/assets/skills';
+
+const store = configureStore(skills);
 
 render(
   <Provider store={ store }>
     <Router history={ hashHistory }>
       <Route path='/' component={ App }>
         <Route path='/who' component={ Who } />
-        <Route path='/skills' component={ Skills } />
+        <Route path='/skills' component={ SkillsContainer } />
         <Route path='/experience' component={ Experience } />
         <Route path='/education' component={ Education } />
         <Route path='/contributions' component={ Contributions } />

@@ -1,16 +1,16 @@
 import { expect } from 'chai';
 
 import createComponent from '../helpers/shallowRenderHelper';
-import { Skills } from '../../src/components/skills';
+import ArcComponent from '../../src/components/arc';
 
-describe('SkillsComponent', () => {
+describe('ArcComponent', () => {
   let component;
 
   beforeEach(() => {
-    component = createComponent(Skills);
+    component = createComponent(ArcComponent);
   });
 
   it('should have its component name as default className', () => {
-    expect(component.props.className).to.equal('skills-component');
+    expect(component.props.className).to.equal('arc-component');
   });
 });
