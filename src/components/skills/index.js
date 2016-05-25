@@ -4,6 +4,8 @@ import d3 from 'd3';
 
 import { setPartition } from '../../creators';
 
+import Arc from '../arc';
+
 require('./Skills.less');
 
 export const Skills = React.createClass({
@@ -15,32 +17,41 @@ export const Skills = React.createClass({
         <blockquote>
           'The beginning of knowledge is the discovery of something we do not understand.' - Frank Herbert
         </blockquote>
+        <svg width={ 500 } height={ 500 }>
+          <g transform={ `translate(${250},${250})` }>
+            {
+              this.props.skills.map((d, i) => {
+                return <Arc key={ d.name + i } datum={ d } />;
+              })
+            }
+          </g>
+        </svg>
       </div>
     );
   },
 
   componentWillMount: function() {
-    const part = d3.layout.partition()
-      .sort(null)
-      .size([Math.PI * 2, Math.pow(250, 2)])
-      .value(d => 1);
-
-    if (this.props.dispatch) {
-      console.log(part.nodes(this.props.skills));
-      this.props.dispatch(setPartition());
-      console.log(this.props);
-    }
+    // console.log(this.props);
+    // if (this.props.dispatch) {
+    //   this.props.dispatch(setPartition());
+    // }
   },
 
   componentDidMount: function() {
-    console.log(this.props);
+    // console.log(this.props);
+  },
+
+  componentWillReceiveProps(newProps) {
+    // console.log(newProps);
   }
 
 });
 
 Skills.displayName = 'SkillsComponent';
 // Skills.propTypes = {};
-// Skills.defaultProps = {};
+Skills.defaultProps = {
+  skills: []
+};
 
 function mapStateToProps(state) {
   return {

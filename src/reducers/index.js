@@ -18,8 +18,10 @@ import {
 export default function(state = initialState, action) {
   switch (action.type) {
     case SET_PARTITION:
+      const cpy = {...state.skills};
       return {
-        skills: part.nodes(state.skills)
+        ...state,
+        skills: part.nodes(cpy)
       };
     default:
       return state;

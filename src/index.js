@@ -2,6 +2,7 @@ import React from 'react';
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 import { Router, Route, hashHistory } from 'react-router';
+import d3 from 'd3';
 
 import configureStore from './store';
 import App from './components/app';
@@ -14,7 +15,12 @@ import Contact from './components/contact';
 
 import skills from '../dist/assets/skills';
 
-const store = configureStore(skills);
+const part = d3.layout.partition()
+  .sort(null)
+  .size([Math.PI * 2, Math.pow(250, 2)])
+  .value(d => 1);
+
+const store = configureStore({ skills: part.nodes(skills) });
 
 render(
   <Provider store={ store }>
