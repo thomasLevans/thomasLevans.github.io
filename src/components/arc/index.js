@@ -21,6 +21,7 @@ const Arc = React.createClass({
         className='arc-component'
         d={ this.calc() }
         style={{ stoke: 'white', fill: this.getFill(), fillRule: 'evenodd'}}
+        display={ this.shouldDisplay() }
         >
       </path>
     );
@@ -32,6 +33,10 @@ const Arc = React.createClass({
 
   getFill: function() {
     return this.props.datum ? fill(this.props.datum) : 'red';
+  },
+
+  shouldDisplay: function() {
+    return this.props.datum.depth ? null : 'none';
   }
 
 });
