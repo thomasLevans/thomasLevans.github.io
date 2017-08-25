@@ -19,3 +19,7 @@ div.legend {
   border: 0px;
   border-radius: 0px;
 }
+
+.navbar-toggle {
+  opacity: 0;
+}
