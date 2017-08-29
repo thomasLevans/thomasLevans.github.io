@@ -329,6 +329,42 @@
       "type": "group",
       "children": [
         {
+          "name": "pact-consumer-dart",
+          "type": "project",
+          "children": [
+            {
+              "name": "Pact Specification",
+              "type": "library",
+              "proficiency": 90,
+              "children": []
+            },
+            {
+              "name": "Testing Theory",
+              "type": "methodology",
+              "proficiency": 100,
+              "children": []
+            },
+            {
+              "name": "Contract Testing",
+              "type": "methodology",
+              "proficiency": 100,
+              "children": []
+            },
+            {
+              "name": "Distributed System Testing",
+              "type": "methodology",
+              "proficiency": 85,
+              "children": []
+            },
+            {
+              "name": "Dart",
+              "type": "language",
+              "proficiency": 100,
+              "children": []
+            }
+          ]
+        },
+        {
           "name": "VisualTree",
           "type": "project",
           "children": [
